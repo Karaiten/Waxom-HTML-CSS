@@ -29,6 +29,11 @@ nav ul {
     list-style-type: none;
 }
 
+nav ul li a:hover {
+    color: #FFCBA4 !important;
+    transition: color 0.3s ease 0.05s; 
+}
+
 nav ul li a {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -36,6 +41,7 @@ nav ul li a {
     padding: 15px 12px 15px 12px;
     margin-right: 10px; 
 }
+
 
 nav ul li a.selected {
     color: #c7b299;
@@ -63,6 +69,11 @@ nav.icons-menu a {
     color: #fff;
 }
 
+.logotype a:hover {
+    color: #FFCBA4 !important;
+    transition: color 0.3s ease 0.05s; 
+}
+
 header {
     justify-content: center;
 }
@@ -80,6 +91,13 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 8px; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.left-sidebar:hover, .right-sidebar:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
 }
 
 .left-sidebar img, .right-sidebar img {
@@ -139,16 +157,27 @@ header {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: inset 0px -3px 0px #736357;
+    box-shadow: inset 0px -3px 0px #736357, 0px 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
     margin-top: 40px;
+}
+
+.button:hover {
+    box-shadow: inset 0px -3px 0px #736357, 0px 6px 10px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: inset 0px -1px 0px #736357, 0px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
 }
 
 .road {
     display: flex;
     gap: 10px;
     height: 90px;
-    justify-content: center; /* Центрує точки по горизонталі */
-    align-items: center; /* Центрує точки по вертикалі */   
+    justify-content: center;
+    align-items: center;  
 }
 
 .road .dot {
@@ -320,7 +349,8 @@ footer .button {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: inset 0px -3px 0px #736357;
+    box-shadow: inset 0px -3px 0px #736357, 0px 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
 
 #burger, [for=burger] {
