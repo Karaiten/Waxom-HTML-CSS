@@ -382,7 +382,7 @@ footer .button {
         position: fixed;
         width: 30px;
         text-align: center;
-        right: 20px;
+        right: 35px;
         font-size: 24px;
     }
 
@@ -401,7 +401,7 @@ footer .button {
         display: flex;
         position: fixed;
         z-index: 150;
-        top: 70%;
+        top: 80%;
         right: 40%;
     }
 
@@ -429,5 +429,14 @@ footer .button {
     .item-customization-three,
     .item-marketing-four {
         flex: 2 0 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 470px) {
+    footer h3 {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 14px;
     }
 }
